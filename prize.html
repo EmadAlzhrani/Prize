@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Responsive meta tag for mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تهانينا! لقد ربحت جهاز PlayStation 5!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Confetti container -->
+  <div class="confetti" id="confetti"></div>
+  
+  <!-- Main content -->
+  <div class="container">
+    <h1>تهانينا!</h1>
+    <p>لقد ربحت جهاز PlayStation 5!</p>
+    <img class="prize" src="ps5.png" alt="PlayStation 5" />
+    
+    <!-- Information form -->
+    <div class="info-form">
+      <h2>استلام جائزتك</h2>
+      <p>يرجى إدخال معلوماتك لاستلام جائزتك:</p>
+
+      <label for="fullName">الاسم الكامل</label>
+      <input id="fullName" type="text" name="fullName" placeholder="أدخل اسمك الكامل">
+        
+      <label for="email">البريد الإلكتروني</label>
+      <input id="email" type="email" name="email" placeholder="أدخل بريدك الإلكتروني">
+        
+      <!-- New ID field inserted as the third input -->
+      <label for="id">رقم الهوية</label>
+      <input id="id" type="text" name="id" placeholder="أدخل رقم هويتك" readonly>
+        
+      <label for="address">عنوان الشحن</label>
+      <input id="address" type="text" name="address" placeholder="أدخل عنوان الشحن الخاص بك" readonly>
+        
+      <button type="submit">إرسال</button>
+    </div>
+  </div>
+  
+  <!-- Popup for ID warning -->
+  <div id="idWarningPopup" class="popup">
+    <div class="popup-content">
+      <h1>تحذير</h1>
+      <p>
+        رقم هويتك هو مفتاح بياناتك الشخصية. اُدْخِلْه فقط في الأماكن الرسمية والجهات الموثوقة، مثل الجهات الحكومية والبنوك والمؤسسات المالية المعتمدة.
+        <br> لا تُشارك رقم هويتك مع أي شخص أو جهة غير معروفة أو مشبوهة، حتى وإن بدا أنهم يقدمون خدمات مساعدة. الحفاظ على سرية رقم هويتك يحميك من الاحتيال وسرقة الهوية!
+      </p>
+      <button id="understandBtn">أفهم</button>
+    </div>
+  </div>
+
+  <!-- Popup for address warning -->
+  <div id="addressWarningPopup" class="popup">
+    <div class="popup-content">
+      <h1>تحذير</h1>
+      <p>
+        حافظ على عنوان منزلك. لا تشاركه إلا مع الجهات الرسمية والموثوقة لأغراض قانونية. تجنب نشره على المواقع المشبوهة، فقد يستغله الآخرون لاستهداف خصوصيتك وأمانك.
+      </p>
+      <button id="understandBtn2">أفهم</button>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <p>
+      تابعنا على
+      <a href="https://www.tiktok.com/@donot_share25?_t=ZS-8v2QnOuGZDV&_r=1" target="_blank">تيك توك</a> 
+      <a href="https://x.com/donot_share25" target="_blank">إكس</a> 
+      <a href="https://www.instagram.com/donot_share25?igsh=dnZ4MGR0NzZkOWky" target="_blank">إنستجرام</a>
+    </p>
+    <p>#لا_تشارك</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
